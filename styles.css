@@ -1,50 +1,16 @@
-.landing {
-  background-color: #ebe0d0;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;  /* changed */
-  gap: 40px;                    /* add gap between text and image */
-  padding: 0 60px;
-  box-sizing: border-box;
-}
-
-.landing-text {
-  max-width: 45%;
-  color: #333;
-  font-family: Arial, sans-serif;
-}
-
-.landing-text p {
+/*Navbar*/
+.navbar-nav .nav-link {
+  color: black;
   font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 0;
 }
 
-.landing-img {
-  height: 60vh;                /* match the container height */
-  width: auto;                 /* keep aspect ratio */
-  object-fit: contain;
-  border-radius: 12px;
+@media screen and (min-width: 1024px) {
+  .navbar-nav .nav-item {
+  padding: 0 1rem;
+}
 }
 
-@media (max-width: 768px) {
-  .landing {
-    flex-direction: column;
-    height: auto;
-    padding: 40px 20px;
-    text-align: center;
-  }
-
-  .landing-text {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .landing-img {
-    height: auto;
-    width: 60%;
-  }
+/*Hero*/
+section.hero {
+  background-color: #ecf2ff;
 }
-
-
