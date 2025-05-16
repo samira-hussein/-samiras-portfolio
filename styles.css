@@ -22,7 +22,6 @@ nav [class^="container"] {
 }
 
 
-
 .navbar-nav .nav-link {
   color: black;
   font-size: 1.1rem;
@@ -50,4 +49,63 @@ section.hero {
   section.hero img {
     width: 110%;
   }
+}
+
+
+/*About Me section*/
+section.aboutme {
+  background-color: #ffffff;
+
+}
+
+
+/*Projects section*/
+
+section.projects {
+  background-color: #f0ecff;
+}
+section.projects {
+  font-size: 1rem;
+  margin: 1rem auto 0;
+  
+}
+
+
+/*project card section*/
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Contact me section*/
+
+section.contactme {
+  background-color: #ecf2ff;
+}
+
+
+/*Footer*/
+
+section.footer {
+  background-color: #c575e9
 }
