@@ -38,7 +38,7 @@ nav [class^="container"] {
 
 /*Hero*/
 section.hero {
-  background-color: #ecf2ff;
+  background-color: #f4ecea;
   padding-top: 72px;
 }
 
@@ -69,9 +69,26 @@ section.hero {
 
 
 
+/*hero section name animation*/
 
+#typing-container {
+  font-family: 'Courier New', monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
 
+#cursor {
+  display: inline-block;
+  color: black;
+  animation: blink 0.7s steps(1) infinite;
+}
 
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+/* end of hero section name animation*/
 
 
 
