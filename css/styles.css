@@ -38,6 +38,20 @@ section [class^="container"] {
   }
 }
 
+.btn.btn-outline-dark.d-none.d-lg-block {
+  box-shadow: 4px 4px #000000;
+  border: 2px solid #000000;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /*Hero*/
@@ -55,6 +69,25 @@ section.hero {
     width: 110%;
   }
 }
+
+
+/*hero section btn*/
+
+.btn.btn-outline-dark.btn-lg {
+  color: black;
+  background-color: transparent;
+  border: 2px solid #000000;
+  box-shadow: 4px 4px #000000;
+  transition: all 0.3s ease;
+}
+
+.btn.btn-outline-dark.btn-lg:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
 
 /*hero section name animation*/
 
@@ -144,15 +177,34 @@ section.projects {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
+.card:hover {
+  box-shadow: 4px 4px #000000;
+  border: 2px solid #000000;
+}
 
 
+/*card btns*/
+.btn-outline-primary {
+  color: black;
+  /* Normal text color */
+  background-color: transparent;
+  border: 1px solid #000000;
+  box-shadow: 1px 1px #000000;
+  transition: all 0.3s ease;
+  /* Smooth transition */
+}
 
-
-
+.btn-outline-primary:hover {
+  background-color: black;
+  /* Hover background */
+  color: white;
+  /* Hover text */
+  border: 2px solid #000000;
+}
 
 
 
