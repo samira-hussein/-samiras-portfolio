@@ -27,13 +27,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="hero">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Me </a>
+                        <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link d-lg-none" href="#">Contact Me</a>
@@ -47,29 +47,29 @@
 
 
 
-<!-- Hero Section -->
-<section class="hero" id="hero">
-  <div class="container-lg">
-    <div class="row align-items-center">
-      <div class="col sm-r">
-        <!-- 👇 Replaced <h1> with animated text -->
-        <div id="typing-container" class="display-2 fw-bold">
-          <span id="typed-text"></span><span id="cursor">|</span>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col sm-r">
+                    <!--  Replaced <h1> with animated text -->
+                    <div id="typing-container" class="display-2 fw-bold">
+                        <span id="typed-text"></span><span id="cursor">|</span>
+                    </div>
+
+                    <p>I combine analytical thinking, creativity
+                        and real-world empathy from healthcare, education and technology to
+                        build intuitive and accessible digital experiences</p>
+
+                    <button class="btn btn-outline-dark btn-lg">Projects</button>
+                </div>
+                <div class="col sm-6 text-center">
+                    <img src="asset/images/hero.png" alt="hero" class="img-fluid">
+                </div>
+            </div>
         </div>
-
-        <p>I combine analytical thinking, creativity
-          and real-world empathy from healthcare, education and technology to
-          build intuitive and accessible digital experiences</p>
-
-        <button class="btn btn-outline-dark btn-lg">Projects</button>
-      </div>
-      <div class="col sm-6 text-center">
-        <img src="asset/images/hero.png" alt="hero" class="img-fluid">
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Hero Section -->
+    </section>
+    <!-- End Hero Section -->
 
 
 
@@ -86,18 +86,37 @@
 
     <!-- Separator Block -->
     <div class="section-separator-banner">
-    <img src="asset/images/food Recipe Website Ui Kit (Community).png" alt="Banner Image">
-</div>
+        <img src="asset/images/food Recipe Website Ui Kit (Community).png" alt="Banner Image">
+    </div>
     <!-- End Separator Block -->
 
 
 
 
 
-    <!--About me section-->
-    <section class="aboutme" id="aboutme">
-        <div class="container">
-            <h2 class="display-5 fw-bold">About Me</h2>
+
+    <!-- About Me Section -->
+    <section class="about-me" id="about">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center mb-4 mb-md-0">
+                    <img src="asset/images/aboutmeimage.png" alt="Samira Hussein"
+                        class="img-fluid rounded-circle about-img">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-description">
+                        I'm Samira Hussein, a UX/UI Designer and Front-End Developer with a background in healthcare,
+                        education, and tech. I specialize in crafting intuitive, human-centered digital experiences with
+                        empathy and design thinking at the core.
+                    </p>
+                    <ul class="about-list">
+                        <li>✨ Strong eye for accessibility and usability</li>
+                        <li>💡 Blend of creative and analytical problem-solving</li>
+                        <li>📱 Passionate about responsive, user-first design</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
     <!--End About me section-->
@@ -122,7 +141,7 @@
                 <!-- card 1-->
                 <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="0">
                     <div class="card h-100">
-                        <img src="asset/images/project1.png" class="card-img-top" alt="project1 case image">
+                        <img src="asset/images/project1.png" alt="project1 case image">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Project 1</h5>
                             <!-- tags -->
@@ -229,7 +248,7 @@
 
 
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
