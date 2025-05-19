@@ -1,5 +1,5 @@
 // hero name animation 
-const phrases = ["Samira Hussein", "UX/UI Designer", "Front-end Developer"];
+const phrases = ["Samira Hussein", "UX/UI Designer", "Front-end Dev"];
 const typedText = document.getElementById("typed-text");
 let phraseIndex = 0;
 let charIndex = 0;

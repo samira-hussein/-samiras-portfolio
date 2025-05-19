@@ -4,11 +4,12 @@ section [class^="container"] {
 
 @media screen and (min-width: 1024px) {
   section [class^="container"] {
-  padding: 4rem;
-}
-nav [class^="container"] {
-  padding: 0 4rem;
-}
+    padding: 4rem;
+  }
+
+  nav [class^="container"] {
+    padding: 0 4rem;
+  }
 }
 
 
@@ -29,12 +30,15 @@ nav [class^="container"] {
 
 @media screen and (min-width: 1024px) {
   .navbar-nav .nav-item {
-  padding: 0 1rem;
+    padding: 0 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
 }
-.navbar-brand {
-  font-size: 1.5rem;
-}
-}
+
+
 
 /*Hero*/
 section.hero {
@@ -46,105 +50,11 @@ section.hero {
   section.hero {
     text-align: center;
   }
+
   section.hero img {
     width: 110%;
   }
 }
-
-
-/* Separator Block */
-.section-separator-banner {
-  height: 300px;
-  background-color: #f4ecea
-  overflow hidden;
-}
-
-.section-separator-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-
-
-
-/*about me section*/
-.about-me {
-  padding: 100px 0;
-
-}
-.about-me {
-  padding: 100px 0;
-  background: linear-gradient(to bottom, #f4ecea, #f0ecff);
-}
-
-
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.about-description {
-  font-size: 1.1rem;
-  line-height: 1.7;
-}
-
-.about-img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  
-}
-
-.about-list {
-  margin-top: 20px;
-  padding-left: 20px;
-}
-
-.about-list li {
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
-/* end of about me section*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*hero section name animation*/
 
@@ -162,26 +72,48 @@ section.hero {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
+
 /* end of hero section name animation*/
 
 
 
+section {
+  margin: 0;
+  padding: 60px 0;
+}
 
 
 
 
 
 
+/*about me section*/
+section.aboutme {
+  background: linear-gradient(to bottom, #f4ecea, #f0ecff);
+  padding-top: 0;
+}
 
+@media screen and (max-width: 576px) {
+  section.aboutme {
+    text-align: center;
+  }
 
+  section.aboutme img {
+    width: 110%;
+  }
+}
 
-
-
-
-
+/* end of about me section*/
 
 
 
@@ -193,21 +125,27 @@ section.hero {
 /*Projects section*/
 
 section.projects {
-  background-color: #f0ecff;
+
+  background: linear-gradient(to bottom, #f0ecff, #f4ecea);
 }
+
+
+
 section.projects {
   font-size: 1rem;
   margin: 1rem auto 0;
-  
+  margin-top: 0;
+  padding-top: 0;
+
 }
 
 
 /*project card section*/
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 
 
@@ -231,18 +169,24 @@ section.projects {
 /*Contact me section*/
 
 section.contactme {
-  background-color: #ecf2ff;
+  background-color: #f4ecea
 }
 
 
 /*Footer*/
 
 section.footer {
-  background-color: #c575e9
+  background-color: #001219
+}
+
+/*footer text*/
+footer p {
+  color: blanchedalmond;
 }
 
 /*scroll*/
 html {
   scroll-behavior: smooth;
 }
+
 /* end of scroll*/
