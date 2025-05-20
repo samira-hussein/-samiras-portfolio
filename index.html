@@ -19,7 +19,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
         <div class="container-lg">
-            <a class="navbar-brand fw-bold" href="#">Samira Hussein</a>
+            <a class="navbar-brand fw-bold" href="#hero">Samira Hussein</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,36 +73,74 @@
 
 
     <!-- About Me Section -->
-    <section class="aboutme" id="about">
-         <figure class="text-center">
-                    <blockquote class="blockquote">
-                        <h1 class="display-3">About Me</h1>
-                    </blockquote>
-                </figure>
+    <section class="aboutme py-5" id="about" style="background: linear-gradient(to bottom, #f4ecea, #f0ecff);">
+        <!-- SVG Divider -->
+        <div class="svg-divider-top">
+            <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#f4ecea" fill-opacity="1"
+                    d="M0,64L60,58.7C120,53,240,43,360,42.7C480,43,600,53,720,74.7C840,96,960,128,1080,117.3C1200,107,1320,53,1380,26.7L1440,0V100H1380C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100H0Z">
+                </path>
+            </svg>
+        </div>
+
         <div class="container-lg">
-            <div class="row align-items-center">
-                <!-- Image on the left -->
-                <div class="col-lg-6 text-center mt-4 mt-lg-0">
-                    <img src="asset/images/aboutme.png" alt="hero" class="img-fluid">
+
+            <!-- Section Title -->
+            <div class="text-center mb-5 position-relative" data-aos="fade-up">
+                <h1 class="display-3 heading-arimo d-inline-block">About Me</h1>
+                <div class="heading-underline mx-auto mt-2"></div>
+            </div>
+
+            <!-- Main Content Row -->
+            <div class="row align-items-center mb-5">
+                <!-- Image Column -->
+                <div class="col-lg-6 text-center mb-4 mb-lg-0" data-aos="fade-right">
+                    <img src="asset/images/aboutme.png" alt="About Me illustration" class="img-fluid rounded shadow-sm">
                 </div>
-                <!-- Text on the right -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
+
+                <!-- Text Column -->
+                <div class="col-lg-6" data-aos="fade-left">
                     <p>
-                        I am a passionate and dedicated web developer with a strong foundation in
-                        HTML, CSS, and JavaScript. I thrive on creating engaging and user-friendly
-                        websites that deliver exceptional experiences.
+                        I'm a <strong>passionate web developer</strong> who bridges design and functionality to create
+                        digital experiences
+                        that are both beautiful and accessible. My background in <strong>healthcare</strong>,
+                        <strong>education</strong>,
+                        and <strong>technology</strong> helps me approach problems with empathy and creativity.
                     </p>
                     <p>
-                        I combine analytical thinking, creativity and real-world empathy from healthcare,
-                        education and technology to build intuitive and accessible digital experiences.
+                        I specialize in building <strong>responsive</strong>, <strong>user-centered</strong> websites
+                        using modern tools
+                        like <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and
+                        <strong>React</strong>.
                     </p>
-                      <p>
-                        I am a passionate and dedicated web developer with a strong foundation in
-                        HTML, CSS, and JavaScript. I thrive on creating engaging and user-friendly
-                        websites that deliver exceptional experiences.
+                    <p>
+                        I believe in <strong>continuous learning</strong>, clean code, and designing for humans.
                     </p>
                 </div>
             </div>
+
+            <!-- Info Cards Row -->
+            <div class="row text-center">
+                <div class="col-md-4 mb-4" data-aos="zoom-in">
+                    <div class="info-card p-4 h-100 shadow-sm rounded">
+                        <h5 class="mb-3">Strengths</h5>
+                        <p>UX/UI Design, Problem Solving</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="info-card p-4 h-100 shadow-sm rounded">
+                        <h5 class="mb-3">Tools</h5>
+                        <p>HTML, CSS, JavaScript, Figma, React</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="info-card p-4 h-100 shadow-sm rounded">
+                        <h5 class="mb-3">card 3</h5>
+                        <p>space here to write </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -111,11 +149,11 @@
 
     <!--Projects sections-->
     <section class="projects" id="projects">
-         <figure class="text-center">
-                    <blockquote class="blockquote">
-                        <h1 class="display-3">Projects</h1>
-                    </blockquote>
-                </figure>
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <h1 class="display-3">Projects</h1>
+            </blockquote>
+        </figure>
         <div class="container-lg">
             <!--Writing before the cards-->
             <p class="lead text-muted mb-4"> Here are some of the projects I have worked on recently. They showcase my
@@ -183,7 +221,7 @@
                     </div>
                 </div>
                 <!-- card 4-->
-                 <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
                     <div class="card h-100">
                         <img src="asset/images/project3.png" class="card-img-top" alt="project3 case image">
                         <div class="card-body">
@@ -202,7 +240,7 @@
                     </div>
                 </div>
                 <!-- card 5-->
-                 <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
                     <div class="card h-100">
                         <img src="asset/images/project3.png" class="card-img-top" alt="project3 case image">
                         <div class="card-body">
@@ -221,7 +259,7 @@
                     </div>
                 </div>
                 <!-- card 6-->
-                 <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="500">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="500">
                     <div class="card h-100">
                         <img src="asset/images/project3.png" class="card-img-top" alt="project3 case image">
                         <div class="card-body">
@@ -252,13 +290,13 @@
 
     <!--Contact me section-->
     <section class="contactme" id="contactme">
-         <figure class="text-center">
-                    <blockquote class="blockquote">
-                        <h1 class="display-3">Contact me</h1>
-                    </blockquote>
-                </figure>
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <h1 class="display-3">Contact me</h1>
+            </blockquote>
+        </figure>
         <div class="container">
-            
+
         </div>
     </section>
     <!--End Contact me section-->
@@ -283,6 +321,12 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
     <!-- AOS JS (placed after Bootstrap) -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>

@@ -126,24 +126,41 @@ section {
 }
 
 
+section h1,
+section h2,
+section h3 {
+  font-family: "Arimo", sans-serif;
+  font-weight: 700;
+}
 
 
 
 
 /*about me section*/
-section.aboutme {
-  background: linear-gradient(to bottom, #f4ecea, #f0ecff);
-  padding-top: 0;
+.heading-underline {
+  height: 4px;
+  width: 80px;
+  background: #000;
+  border-radius: 2px;
 }
 
-@media screen and (max-width: 576px) {
-  section.aboutme {
-    text-align: center;
-  }
+.info-card {
+  box-shadow: 4px 4px #000000;
+  border: 1px solid #000000;
+}
 
-  section.aboutme img {
-    width: 110%;
-  }
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px rgba(#000000);
+  transition: all 0.3s ease;
+}
+
+.svg-divider-top {
+  position: relative;
+  top: -1px;
+  z-index: 1;
+  overflow: hidden;
+  line-height: 0;
 }
 
 /* end of about me section*/
@@ -177,13 +194,13 @@ section.projects {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px rgba(#000000);
   transition: all 0.3s ease;
 }
 
-.card:hover {
+.card {
   box-shadow: 4px 4px #000000;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
 }
 
 
@@ -192,8 +209,8 @@ section.projects {
   color: black;
   /* Normal text color */
   background-color: transparent;
-  border: 1px solid #000000;
-  box-shadow: 1px 1px #000000;
+  border: 2px solid #000000;
+  box-shadow: 4px 4px #000000;
   transition: all 0.3s ease;
   /* Smooth transition */
 }
