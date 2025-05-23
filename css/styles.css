@@ -144,24 +144,20 @@ section h3 {
   border-radius: 2px;
 }
 
-.info-card {
-  box-shadow: 4px 4px #000000;
-  border: 1px solid #000000;
-}
-
 .info-card:hover {
   transform: translateY(-5px);
   box-shadow: 4px 4px rgba(#000000);
   transition: all 0.3s ease;
 }
 
-.svg-divider-top {
-  position: relative;
-  top: -1px;
-  z-index: 1;
-  overflow: hidden;
-  line-height: 0;
+
+.info-card {
+  box-shadow: 4px 4px #000000;
+  border: 1px solid #000000;
 }
+
+
+
 
 /* end of about me section*/
 
