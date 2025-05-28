@@ -57,7 +57,7 @@ section [class^="container"] {
 /*Hero*/
 section.hero {
   background-color: #f4ecea;
-  padding-top: 72px;
+  padding-top: 120px; /* increase to give breathing room below navbar */
 }
 
 @media screen and (max-width: 576px) {
@@ -137,6 +137,12 @@ section h3 {
 
 
 /*about me section*/
+/* about me section */
+#about {
+  background: linear-gradient(to bottom, #f4ecea, #f0ecff);
+}
+
+/* heading underline */
 .heading-underline {
   height: 4px;
   width: 80px;
@@ -144,18 +150,28 @@ section h3 {
   border-radius: 2px;
 }
 
-.info-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 4px 4px rgba(#000000);
+/* custom tab styles */
+.custom-tabs .nav-link {
+  font-weight: bold;
+  color: #555;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-right: 15px;
   transition: all 0.3s ease;
 }
 
-
-.info-card {
-  box-shadow: 4px 4px #000000;
-  border: 1px solid #000000;
+.custom-tabs .nav-link.active {
+  color: #000;
+  border-color: #000;
+  background: transparent;
 }
 
+/* tab content */
+.tab-content p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
 
 
 
