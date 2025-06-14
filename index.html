@@ -15,12 +15,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="asset/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="asset/images/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
 </head>
 
 <body>
     <!-- Navbar -->
-  <div id="navbar"></div>
+    <div id="navbar"></div>
     <!-- End Navbar -->
 
 
@@ -34,7 +37,6 @@
                     <div id="typing-container" class="display-2 fw-bold">
                         <span id="typed-text"></span><span id="cursor">|</span>
                     </div>
-
                     <p>I combine analytical thinking, creativity
                         and real-world empathy from healthcare, education and technology to
                         build intuitive and accessible digital experiences</p>
@@ -190,14 +192,32 @@
 
 
     <!--Contact me section-->
-    <section class="contactme" id="contactme">
-        <figure class="text-center">
-            <blockquote class="blockquote">
-                <h1 class="display-3">Contact me</h1>
-            </blockquote>
-        </figure>
+    <section id="contact">
         <div class="container">
-
+            <div class="row">
+                <div class="contact-left">
+                    <h2>Contact Me</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i>Email: <a href="mailto:samirahussein234@gmail.com"
+                            class="email-link">samirahussein234@gmail.com</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/samira-h-a7996619b/" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/samira-hussein" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="" class="btn">Download CV</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <!--End Contact me section-->

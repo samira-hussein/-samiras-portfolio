@@ -246,11 +246,104 @@ section.projects {
 
 
 
-/*Contact me section*/
-
-section.contactme {
+/*Contact section*/
+#contact {
   background-color: #f4ecea
 }
+.contact-left {
+  flex-basis: 35%;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-left p {
+  margin-top: 30px;
+}
+
+.contact-left p i {
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons a {
+  display: inline-block;
+  font-size: 24px;
+  color: black;
+  background-color: transparent;
+  border: 2px solid #000000;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 4px #000000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: black;
+  color: white;
+}
+
+/*email styling*/
+.email-link {
+  color: black;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: gray;
+}
+
+/* Download CV btn */
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+  background-color: transparent;
+  border: 2px solid #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 4px 4px #000000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.contact-right form {
+  width: 100%;
+}
+ form input, form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #f0f0f0;
+  padding: 15px;
+  margin: 15px 0;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 6px;
+ }
+
+
+
+/* End of contact section */
+
+
+
+
+
+
+
+
+
 
 
 /*Footer*/
@@ -273,21 +366,4 @@ html {
 
 
 
-/* Project pages styles */
-/* Make the footer stay at the bottom when content is short */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
-.page-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
-}
-/* End of project pages styles */
