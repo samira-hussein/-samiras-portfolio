@@ -92,7 +92,7 @@ section.hero {
 /*hero section name animation*/
 
 #typing-container {
-  font-family: 'Courier New', monospace;
+  font-family: 'poppins', monospace;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
@@ -324,7 +324,7 @@ section.projects {
   width: 100%;
   border: 0;
   outline: none;
-  background: #f0f0f0;
+  background: #d5ccdf0;
   padding: 15px;
   margin: 15px 0;
   color: #000000;
@@ -349,12 +349,15 @@ section.projects {
 /*Footer*/
 
 section.footer {
-  background-color: #001219
+  background-color: #6d4d90;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'sofia soft', sans-serif;
 }
 
 /*footer text*/
 footer p {
-  color: blanchedalmond;
+  color: #ffffff;
 }
 
 /*scroll*/
