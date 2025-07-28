@@ -349,15 +349,17 @@ section.projects {
 /*Footer*/
 
 section.footer {
-  background-color: #6d4d90;
+  background-color: #151312;
   padding: 40px 20px;
   text-align: center;
   font-family: 'sofia soft', sans-serif;
+  color: #f0ecff;
+  position: relative; 
 }
 
 /*footer text*/
 footer p {
-  color: #ffffff;
+  color: #f0ecff;
 }
 
 /*scroll*/
