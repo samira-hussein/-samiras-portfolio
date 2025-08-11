@@ -71,3 +71,20 @@ window.addEventListener("DOMContentLoaded", () => {
   loadHTML("footer", "partials/footer.html");
 });
 // end of footer
+
+// project 1 
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.process-card');
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(({ isIntersecting, target }) => {
+      if (isIntersecting) {
+        target.classList.add('visible');
+        observer.unobserve(target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  cards.forEach(card => observer.observe(card));
+});
+// end of project 1
