@@ -88,3 +88,13 @@ document.addEventListener('DOMContentLoaded', () => {
   cards.forEach(card => observer.observe(card));
 });
 // end of project 1
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".research-section");
+  if (container) {
+    container.style.border = "none";
+    container.style.boxShadow = "none";
+  }
+});
+
