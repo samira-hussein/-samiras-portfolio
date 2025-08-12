@@ -98,3 +98,32 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// for project 3 - back to the top arrow icon 
+document.getElementById('back-to-top').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+//icon button toggle the back to the top arrow icon 
+const backToTop = document.getElementById('back-to-top');
+const footer = document.getElementById('footer');
+
+function checkOverlap() {
+  const footerRect = footer.getBoundingClientRect();
+  const buttonRect = backToTop.getBoundingClientRect();
+
+  // If button's bottom edge is lower than footer's top edge (meaning overlap or touching)
+  if (buttonRect.bottom > footerRect.top) {
+    backToTop.classList.add('footer-visible');
+  } else {
+    backToTop.classList.remove('footer-visible');
+  }
+}
+
+// Check overlap on scroll and resize
+window.addEventListener('scroll', checkOverlap);
+window.addEventListener('resize', checkOverlap);
+
+// Initial check
+checkOverlap();
+
