@@ -348,7 +348,7 @@ section.projects {
 
 /*Footer*/
 
-section.footer {
+#footer {
   background-color: #151312;
   padding: 40px 20px;
   text-align: center;
@@ -357,15 +357,10 @@ section.footer {
   position: relative; 
 }
 
-/*footer text*/
-footer p {
+#footer p {
   color: #f0ecff;
 }
 
-/*scroll*/
-html {
-  scroll-behavior: smooth;
-}
 
 /* end of scroll*/
 

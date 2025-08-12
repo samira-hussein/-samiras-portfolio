@@ -127,3 +127,34 @@ window.addEventListener('resize', checkOverlap);
 // Initial check
 checkOverlap();
 
+// project 3 
+document.addEventListener('DOMContentLoaded', () => {
+  const backToTopBtn = document.getElementById('back-to-top');
+  const footer = document.getElementById('footer');
+
+  // Show back to top button after scrolling 200px
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      backToTopBtn.classList.add('show');
+    } else {
+      backToTopBtn.classList.remove('show');
+      backToTopBtn.classList.remove('footer-visible');
+    }
+
+    // Check if footer is visible in viewport for styling the button
+    const footerRect = footer.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (footerRect.top < windowHeight && footerRect.bottom >= 0) {
+      backToTopBtn.classList.add('footer-visible');
+    } else {
+      backToTopBtn.classList.remove('footer-visible');
+    }
+  });
+
+  // Smooth scroll to top on click
+  backToTopBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
