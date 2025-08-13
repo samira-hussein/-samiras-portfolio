@@ -18,7 +18,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: url('../asset/images/project1bkg.jpg') no-repeat center center fixed;
+  background: url('../asset/images/project3bkg.jpg') no-repeat center center fixed;
   background-size: cover;
   color: var(--color-dark);
   line-height: 1.6;
