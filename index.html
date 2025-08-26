@@ -191,14 +191,18 @@
     <!--End Projects section-->
 
 
-    <!--Contact me section-->
+    <!-- Contact Me Section -->
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h2>Contact Me</h2>
-                    <p>Email: <a href="mailto:samirahussein234@gmail.com"
-                            class="email-link">samirahussein234@gmail.com</a></p>
+                    <p>Email:
+                        <a href="mailto:samirahussein234@gmail.com" class="email-link">
+                            samirahussein234@gmail.com
+                        </a>
+                    </p>
+                    <p> If you have any questions or just want to say hi, feel free to drop me a message!</p>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/samira-h-a7996619b/" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
@@ -208,18 +212,40 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="contact-right">
-                    <form name="submit-to-google-sheetgit ">
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn2">submit</button>
+                        <button type="submit" class="btn btn-outline-primary">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <!--End Contact me section-->
+    <!-- End Contact Me Section -->
+
+
+
+    <!-- Thank You Modal -->
+    <div class="modal" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Thank you for submitting your query. We’ll get back to you soon!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Thank You Modal -->
 
 
 
@@ -248,22 +274,39 @@
     </script>
 
 
-
-
-
-
-    <script src="js/script.js"></script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzCL-GDvZg-MhD7VsN6pfZ4RYHA1LrMsCNUNA8bvIMkFrr0hTdPakOIhlktfeTP_G0BAg/exec'
-        const form = document.forms['submit-to-google-sheet']
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzCL-GDvZg-MhD7VsN6pfZ4RYHA1LrMsCNUNA8bvIMkFrr0hTdPakOIhlktfeTP_G0BAg/exec';
+        const form = document.forms['submit-to-google-sheet'];
 
         form.addEventListener('submit', e => {
-            e.preventDefault()
+            e.preventDefault();
+
+            // Show modal immediately
+            const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+            thankYouModal.show();
+
+            // Change body text to "Sending..." while waiting
+            document.querySelector('#thankYouModal .modal-body').textContent = "Sending your message...";
+
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-        })
+                .then(response => {
+                    document.querySelector('#thankYouModal .modal-body').textContent =
+                        "Thank you for submitting your query. We’ll get back to you soon!";
+                    form.reset();
+                })
+                .catch(error => {
+                    document.querySelector('#thankYouModal .modal-body').textContent =
+                        "Error submitting form. Please try again.";
+                    console.error('Error!', error.message);
+                });
+        });
+
     </script>
+
+
+
+
+
 </body>
 
 </html>

@@ -57,7 +57,8 @@ section [class^="container"] {
 /*Hero*/
 section.hero {
   background-color: #f4ecea;
-  padding-top: 120px; /* increase to give breathing room below navbar */
+  padding-top: 120px;
+  /* increase to give breathing room below navbar */
 }
 
 @media screen and (max-width: 576px) {
@@ -250,6 +251,7 @@ section.projects {
 #contact {
   background-color: #f4ecea
 }
+
 .contact-left {
   flex-basis: 35%;
 }
@@ -320,19 +322,90 @@ section.projects {
 .contact-right form {
   width: 100%;
 }
- form input, form textarea {
+
+form input,
+form textarea {
   width: 100%;
   border: 0;
   outline: none;
-  background: #d5ccdf0;
+  background: #d5ccdf;
   padding: 15px;
   margin: 15px 0;
   color: #000000;
   font-size: 18px;
   border-radius: 6px;
- }
+}
 
 
+/*thank you modal styles*/
+
+
+#contact {
+  padding: 60px 0;
+}
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-right {
+  flex: 1;
+}
+
+.contact-right form input,
+.contact-right form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* Button Styling */
+.btn-outline-primary {
+  color: black;
+  background-color: transparent;
+  border: 2px solid #000000;
+  box-shadow: 4px 4px #000000;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid #000000;
+}
+
+/* Modal Styling to match button aesthetic */
+.modal-content {
+  border: 2px solid #000000;
+  box-shadow: 6px 6px #000000;
+  border-radius: 12px;
+}
+
+/* Modal Styling to match button aesthetic */
+.modal-content {
+  border: 2px solid #000000;
+  box-shadow: 6px 6px #000000;
+  border-radius: 12px;
+  background-color: #f4ecea;
+  /* custom background */
+}
+
+/* Optional: make text more readable on the light lilac background */
+.modal-title,
+.modal-body,
+.modal-footer {
+  color: #000000;
+}
+
+
+/* Make modal transitions faster */
+.modal.fade .modal-dialog {
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+
+}
 
 /* End of contact section */
 
@@ -354,7 +427,7 @@ section.projects {
   text-align: center;
   font-family: 'sofia soft', sans-serif;
   color: #f0ecff;
-  position: relative; 
+  position: relative;
 }
 
 #footer p {
@@ -363,7 +436,3 @@ section.projects {
 
 
 /* end of scroll*/
-
-
-
-

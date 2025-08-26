@@ -99,7 +99,7 @@ p, .lead {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1.25rem;z
+  margin: 0 auto 1.25rem;
   transition: background 0.3s ease;
 }
 
